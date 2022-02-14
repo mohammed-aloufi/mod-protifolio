@@ -303,9 +303,9 @@ a {
 .tunes.loaded {
   opacity: 1;
 }
-.tunes-name {
+/* .tunes-name {
   opacity: 0.5;
-}
+} */
 .tunes * {
   vertical-align: middle;
 }
