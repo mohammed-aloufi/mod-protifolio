@@ -100,13 +100,13 @@ Mod = {
     var player = document.querySelector(".tunes");
     var autoplay = autoplay || false;
     var track = this.tunes[Math.floor(Math.random() * this.tunes.length)];
-    var name = player.querySelector(".tunes-name");
+    // var name = player.querySelector(".tunes-name");
     var btn = player.querySelector(".tunes-play");
     var audio = (this.audio = new Audio(track.audio));
     player.classList.remove("loaded");
     audio.volume = "0.05";
-    name.innerHTML = track.name;
-    name.setAttribute("text", track.name);
+    // name.innerHTML = track.name;
+    // name.setAttribute("text", track.name);
     audio.addEventListener("loadeddata", function () {
       player.classList.add("loaded");
       btn.addEventListener("click", Mod.toggleTune.bind(Mod));

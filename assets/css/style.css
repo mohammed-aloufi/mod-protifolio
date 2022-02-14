@@ -292,7 +292,8 @@ a {
 
 .tunes {
   position: absolute;
-  bottom: 0rem;
+  bottom: 3rem;
+
   z-index: 2;
   white-space: nowrap;
   font-family: "Gooper";
