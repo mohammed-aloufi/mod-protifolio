@@ -291,9 +291,9 @@ a {
 }
 
 .tunes {
-  position: absolute;
-  bottom: 3rem;
-
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 2;
   white-space: nowrap;
   font-family: "Gooper";
@@ -303,16 +303,16 @@ a {
 .tunes.loaded {
   opacity: 1;
 }
-/* .tunes-name {
+.tunes-name {
   opacity: 0.5;
-} */
+}
 .tunes * {
   vertical-align: middle;
 }
 .tunes-play.btn {
   font-size: 1.5rem;
-  margin-left: 0.5rem;
-  opacity: 0.5;
+  margin-left: 0rem;
+  opacity: 1.5;
 }
 .tunes-play.btn:hover {
   opacity: 1;
@@ -334,7 +334,7 @@ main {
 main > section,
 main > nav {
   position: relative;
-  display: flex;
+
   z-index: 1;
   border: 48px solid #eee;
   border-image: url(../title-card.svg) 44 stretch;
