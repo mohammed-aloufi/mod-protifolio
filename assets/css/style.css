@@ -292,7 +292,7 @@ a {
 
 .tunes {
   position: fixed;
-  bottom: 3rem;
+  bottom: 0rem;
   z-index: 2;
   white-space: nowrap;
   font-family: "Gooper";
@@ -333,6 +333,7 @@ main {
 main > section,
 main > nav {
   position: relative;
+  display: flex;
   z-index: 1;
   border: 48px solid #eee;
   border-image: url(../title-card.svg) 44 stretch;
