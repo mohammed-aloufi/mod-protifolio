@@ -198,13 +198,15 @@ Mod = {
       });
     });
     var click = new Audio("assets/audio/click.mp3");
-    document.querySelectorAll(".nav-links a,.btn").forEach(function (link) {
-      link.addEventListener("mousedown", function () {
-        click.volume = 0.05;
-        click.load();
-        click.play();
+    document
+      .querySelectorAll(".nav-links a,.btn, h3, a img")
+      .forEach(function (link) {
+        link.addEventListener("mousedown", function () {
+          click.volume = 0.05;
+          click.load();
+          click.play();
+        });
       });
-    });
 
     // fade in
     window.addEventListener("load", function () {
