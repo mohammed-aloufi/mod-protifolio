@@ -105,6 +105,7 @@ Mod = {
     var audio = (this.audio = new Audio(track.audio));
     player.classList.remove("loaded");
     audio.volume = "0.05";
+
     name.innerHTML = track.name;
     name.setAttribute("text", track.name);
     audio.addEventListener("loadeddata", function () {
@@ -129,6 +130,21 @@ Mod = {
       this.audio.pause();
       btn.setAttribute("text", (btn.innerHTML = "►"));
     }
+  },
+  pressToStart: function () {
+    const startbtn = document.getElementById("startbtn");
+    const content = document.getElementById("main");
+    var btn = document.querySelector(".tunes-play");
+
+    startbtn.addEventListener("click", () => {
+      startbtn.style.display = "none";
+      //Wait for the music to start
+      this.audio.play().then(() => {
+        //Hide the loader and show the content
+        content.style.display = "";
+        btn.setAttribute("text", (btn.innerHTML = "❚❚"));
+      });
+    });
   },
 
   init: function () {
@@ -156,6 +172,9 @@ Mod = {
     ]);
 
     this.loadRandomTune();
+    // Mod.toggleTune();
+
+    this.pressToStart();
 
     // Fun Letters
     this.funLetters(document.querySelector("body"));

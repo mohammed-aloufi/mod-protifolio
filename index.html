@@ -35,6 +35,11 @@
 
 
     <main>
+      <button id="startbtn">
+
+        <p class="fun-letters" style="font-size:
+          3em;">Start</p>
+      </button>
 
       <section id="about">
         <div>
@@ -58,6 +63,7 @@
           <a href="#" class="close btn"><span class="rgb-text-shift">&times;</span></a>
         </div>
       </section>
+
       <section id="contacts">
         <div>
           <p class="fun-letters">Let's talk!</p>
@@ -79,10 +85,23 @@
       </section>
 
       <section id="projects">
-        <div>
+        <div class="section-div">
           <p class="fun-letters">Projects</p>
           <p class="rgb-text-shift">
-            <p><h3>Memoria</h3> <h5>Android</h5>In this project I'm using great
+            <div class="project">
+              <figure class="image is-72x72">
+                <a href="#memoria">
+                  <img src="assets/memoria-logo.png">
+                </a>
+              </figure>
+              <div class="project-info">
+                <a href="#memoria"><h3>Memoria</h3> </a>
+                <h5>Android</h5>
+              </div>
+            </div>
+            <!-- <p> In
+              this
+              project I'm using great
               yet challenging things such:
               <ul style="text-align: left;">
                 <li>Dependence
@@ -91,83 +110,230 @@
                 <li>coroutine and Flow</li>
                 <li>Retrofit</li>
               </ul>
-            </p>
+            </p> -->
           </p>
           <p class="rgb-text-shift">
-            <p><h3>ToDo List</h3> <h5>Android</h5>In this project I used:
-              <ul style="text-align: left;">
-                <li>MVC architecture</li>
-                <li>Room Database</li>
-                <li>LiveData</li>
-              </ul>
-            </p>
+            <div class="project">
+              <figure class="image is-72x72">
+                <a href="#todo">
+                  <img src="assets/todo-logo.png">
+                </a>
+              </figure>
+              <div class="project-info">
+                <a href="#todo"><h3>ToDo List</h3> </a>
+                <h5>Android</h5>
+              </div>
+            </div>
           </p>
           <p class="rgb-text-shift">
-            <p><h3>Scrolly</h3> <h5>Android</h5>
-              This is a scoial app that was built in 24h <br/>I did it in a mini
-                hakathon that was held in our class.
-              </p>
+            <div class="project">
+              <figure class="image is-72x72">
+                <a href="#scrolly">
+                  <img src="assets/scrolly-logo.png">
+                </a>
+              </figure>
+              <div class="project-info">
+                <a href="#scrolly"><h3>Scrolly</h3> </a>
+                <h5>Android</h5>
+              </div>
+            </div>
+            <p>
+
             </p>
-            <a href="#" class="close btn"><span
+          </p>
+          <a href="#" class="close btn"><span
+              class="rgb-text-shift">&times;</span></a>
+        </div>
+      </section>
+
+      <section id="memoria" class="project-details">
+        <div class="section-div">
+          <div class="project">
+            <figure class="image is-90x90">
+              <a href="#memoria">
+                <img src="assets/memoria-logo.png">
+              </a>
+            </figure>
+            <div class="project-info">
+              <h2>Memoria</h2>
+              <h5>Android</h5>
+              <h5>Language: Kotlin</h5>
+            </div>
+          </div>
+
+          <p class="rgb-text-shift">
+            This is app is still a work in progress, once done will be updated.
+          </p>
+          <script
+            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_5tj19vcp.json"
+            background="transparent" speed="1" style="width: 300px; height:
+            300px;" loop autoplay></lottie-player>
+          <br/>
+            <p class="rgb-text-shift">
+              <h4>Github Repository</h4>
+            </p>
+            <p>
+              <a href="https://github.com/mohammed-aloufi/Memoria"
+                target="_blank">
+                mohammed-aloufi/Memoria
+              </a>
+            </p>
+            <a href="#projects" class="close btn"><span
                 class="rgb-text-shift">&times;</span></a>
           </div>
         </section>
 
-        <nav>
-          <div class="nav-links">
-            <a href="#about">
-              <div class="text"><span class="fun-letters">About</span></div>
-              <section>
-                <img src="assets/about.svg" class="blend" />
-                <img src="assets/about.svg" class="no-blend" />
-              </section>
-            </a>
-            <a href="https://github.com/mohammed-aloufi"
-              target="💼">
-              <div class="text"><span class="fun-letters">GitHub</span></div>
-              <section>
-                <img src="assets/mod-github.svg" />
-              </section>
-            </a>
-            <a href="#projects">
-              <div class="text"><span class="fun-letters">Projects</span></div>
-              <section>
-                <img src="assets/mod-github.svg" />
-              </section>
-            </a>
-            <a href="https://instagram.com/m.ofi" target="🎨">
-              <div class="text"><span class="fun-letters">Instagram</span></div>
-              <section>
-                <img src="assets/instagram.svg" />
-              </section>
-            </a>
-            <a href="assets/mohammed-aloufi-resume.pdf" download>
-              <div class="text"><span class="fun-letters">Resume</span></div>
-              <section>
-                <img src="assets/resume.svg" />
-              </section>
-            </a>
-            <a href="#contacts">
-              <div class="text"><span class="fun-letters">Contacts</span></div>
-              <section>
-                <img src="assets/contacts.svg" />
-              </section>
-            </a>
-            <section>
-              <img src="assets/main.svg" />
+        <section id="todo" class="project-details">
+          <div class="section-div">
+            <div class="project">
+              <figure class="image is-90x90">
+                <img src="assets/todo-logo.png">
+              </figure>
+              <div class="project-info">
+                <h2>ToDo</h2>
+                <h5>Android</h5>
+                <h5>Language: Kotlin</h5>
+              </div>
+            </div>
+
+            <p class="rgb-text-shift">
+              This is an app where users can manage thier tasks.
+            </p>
+            <p class="rgb-text-shift">
+              The user can also create tasks based on the custom categories
+              that
+              he creates.
+            </p>
+
+            <br/>
+              <p class="rgb-text-shift">
+                <h4>In this project I used</h4>
+              </p>
+              <p class="rgb-text-shift">
+                <ul style="text-align: left;">
+                  <li>MVC architecture</li>
+                  <li>Room Database</li>
+                  <li>LiveData</li>
+                </ul>
+              </p>
+
+              <br/>
+                <p class="rgb-text-shift">
+                  <h4>Github Repository</h4>
+                </p>
+                <p>
+                  <a href="https://github.com/mohammed-aloufi/To_Do"
+                    target="_blank">
+                    mohammed-aloufi/To_Do
+                  </a>
+                </p>
+                <a href="#projects" class="close btn"><span
+                    class="rgb-text-shift">&times;</span></a>
+              </div>
             </section>
 
-          </div>
-        </nav>
-      </main>
+            <section id="scrolly" class="project-details">
+              <div class="section-div">
+                <div class="project">
+                  <figure class="image is-90x90">
+                    <img src="assets/scrolly-logo.png">
+
+                  </figure>
+                  <div class="project-info">
+                    <h2>Scrolly</h2>
+                    <h5>Android</h5>
+                    <h5>Language: Kotlin</h5>
+                  </div>
+                </div>
+                <p class="rgb-text-shift">
+                  This is a scoial app that was built in 24h.
+                  We did it in a mini hakathon that was held in our class.
+                </p>
+                <br/>
+                  <p>
+                    <h4>
+                      In this project I worked with:
+                    </h4>
+                  </p>
+
+                  <p>
+                    <a
+                      href="https://github.com/WalaaAlshaikh" target="_blank">
+                      @Walaa Alshaikh
+                    </a>
+                  </p>
+                  <br/>
+                    <p class="rgb-text-shift">
+                      <h4>Github Repository</h4>
+                    </p>
+                    <p>
+                      <a href="https://github.com/mohammed-aloufi/Project-01"
+                        target="_blank">
+                        www.github.com/mohammed-aloufi/Project-01
+                      </a>
+                    </p>
+                    <a href="#projects" class="close btn"><span
+                        class="rgb-text-shift">&times;</span></a>
+                  </div>
+                </section>
+
+                <nav id="main" style="display: none;">
+                  <div class="nav-links">
+                    <a href="#about">
+                      <div class="text"><span class="fun-letters">About</span></div>
+                      <section>
+                        <img src="assets/about.svg" class="blend" />
+                        <img src="assets/about.svg" class="no-blend" />
+                      </section>
+                    </a>
+                    <a href="https://github.com/mohammed-aloufi"
+                      target="💼">
+                      <div class="text"><span class="fun-letters">GitHub</span></div>
+                      <section>
+                        <img src="assets/mod-github.svg" />
+                      </section>
+                    </a>
+                    <a href="#projects">
+                      <div class="text"><span class="fun-letters">Projects</span></div>
+                      <section>
+                        <img src="assets/mod-github.svg" />
+                      </section>
+                    </a>
+                    <a href="https://instagram.com/m.ofi" target="🎨">
+                      <div class="text"><span class="fun-letters">Instagram</span></div>
+                      <section>
+                        <img src="assets/instagram.svg" />
+                      </section>
+                    </a>
+                    <a href="assets/mohammed-aloufi-resume.pdf" download>
+                      <div class="text"><span class="fun-letters">Resume</span></div>
+                      <section>
+                        <img src="assets/resume.svg" />
+                      </section>
+                    </a>
+                    <a href="#contacts">
+                      <div class="text"><span class="fun-letters">Contacts</span></div>
+                      <section>
+                        <img src="assets/contacts.svg" />
+                      </section>
+                    </a>
+                    <section>
+                      <img src="assets/main.svg" />
+                    </section>
+
+                  </div>
+                </nav>
+              </main>
 
 
-      <div class="fx">
-        <canvas id="canvas"></canvas>
-      </div>
+              <div class="fx">
+                <canvas id="canvas"></canvas>
+              </div>
 
-      <script src='assets/js/app.js'></script>
-      <script type="text/javascript">
+              <script src='assets/js/app.js'></script>
+              <script type="text/javascript">
     var _gauges = _gauges || [];
     (function() {
       var t   = document.createElement('script');
@@ -181,6 +347,6 @@
       s.parentNode.insertBefore(t, s);
     })();
   </script>
-    </body>
+            </body>
 
-  </html>
+          </html>
