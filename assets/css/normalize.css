@@ -51,7 +51,6 @@ audio:not([controls]) {
   display: none;
 }
 
-
 /* =============================================================================
    Base
    ========================================================================== */
@@ -89,7 +88,6 @@ body {
   margin: 0;
 }
 
-
 /* =============================================================================
    Links
    ========================================================================== */
@@ -111,7 +109,6 @@ a:hover,
 a:active {
   outline: 0;
 }
-
 
 /* =============================================================================
    Typography
@@ -209,7 +206,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
+  _font-family: "courier new", monospace;
   font-size: 1em;
 }
 
@@ -238,7 +235,7 @@ q {
 
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -266,7 +263,6 @@ sup {
 sub {
   bottom: -0.25em;
 }
-
 
 /* =============================================================================
    Lists
@@ -307,7 +303,6 @@ nav ol {
   list-style-image: none;
 }
 
-
 /* =============================================================================
    Embedded content
    ========================================================================== */
@@ -331,7 +326,6 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-
 /* =============================================================================
    Figures
    ========================================================================== */
@@ -343,7 +337,6 @@ svg:not(:root) {
 figure {
   margin: 0;
 }
-
 
 /* =============================================================================
    Forms
@@ -386,7 +379,7 @@ legend {
  * 3. Improves appearance and consistency in all browsers
  */
 
-button,
+/* button, */
 input,
 select,
 textarea {
@@ -400,10 +393,10 @@ textarea {
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
 
-button,
-input {
-  line-height: normal; /* 1 */
-}
+/* button, */
+/* input {
+  line-height: normal;
+} */
 
 /*
  * 1. Improves usability and consistency of cursor style between image-type 'input' and others
@@ -412,23 +405,23 @@ input {
  *  Known issue: inner spacing remains in IE6
  */
 
-button,
+/* button, 
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  cursor: pointer; /* 1 */
-  -webkit-appearance: button; /* 2 */
-  *overflow: visible;  /* 3 */
-}
+  cursor: pointer; 
+  -webkit-appearance: button; 
+  *overflow: visible;  
+} */
 
 /*
  * Re-set default cursor for disabled elements
  */
 
-button[disabled],
+/* button[disabled],
 input[disabled] {
   cursor: default;
-}
+} */
 
 /*
  * 1. Addresses box sizing set to content-box in IE8/9
@@ -437,13 +430,13 @@ input[disabled] {
     Known issue: excess padding remains in IE6
  */
 
-input[type="checkbox"],
+/* input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-  *height: 13px; /* 3 */
-  *width: 13px; /* 3 */
-}
+  box-sizing: border-box; 
+  padding: 0; 
+  *height: 13px; 
+  *width: 13px;
+} */
 
 /*
  * 1. Addresses appearance set to searchfield in S5, Chrome
@@ -459,21 +452,21 @@ input[type="search"] {
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
 
-input[type="search"]::-webkit-search-decoration,
+/* input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
-}
+} */
 
 /*
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
 
-button::-moz-focus-inner,
+/* button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
-}
+} */
 
 /*
  * 1. Removes default vertical scrollbar in IE6/7/8/9
@@ -484,7 +477,6 @@ textarea {
   overflow: auto; /* 1 */
   vertical-align: top; /* 2 */
 }
-
 
 /* =============================================================================
    Tables
