@@ -133,7 +133,13 @@ Mod = {
   },
   pressToStart: function () {
     const startbtn = document.getElementById("startbtn");
-    const content = document.getElementById("main");
+    const main = document.getElementById("main");
+    const about = document.getElementById("about");
+    const contacts = document.getElementById("contacts");
+    const projects = document.getElementById("projects");
+    const memoria = document.getElementById("memoria");
+    const todo = document.getElementById("todo");
+    const scrolly = document.getElementById("scrolly");
     var btn = document.querySelector(".tunes-play");
 
     startbtn.addEventListener("click", () => {
@@ -141,7 +147,14 @@ Mod = {
       //Wait for the music to start
       this.audio.play().then(() => {
         //Hide the loader and show the content
-        content.style.display = "";
+        main.style.display = "";
+        about.style.display = "";
+        contacts.style.display = "";
+        projects.style.display = "";
+        memoria.style.display = "";
+        todo.style.display = "";
+        scrolly.style.display = "";
+        window.location.href = "#";
         btn.setAttribute("text", (btn.innerHTML = "❚❚"));
       });
     });
@@ -176,12 +189,6 @@ Mod = {
 
     this.pressToStart();
 
-    if (!this.audio.paused) {
-      const startbtn = document.getElementById("startbtn");
-      const content = document.getElementById("main");
-      content.style.display = "";
-      btn.setAttribute("text", (btn.innerHTML = "❚❚"));
-    }
     // Fun Letters
     this.funLetters(document.querySelector("body"));
 
