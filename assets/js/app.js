@@ -176,6 +176,12 @@ Mod = {
 
     this.pressToStart();
 
+    if (!this.audio.paused) {
+      const startbtn = document.getElementById("startbtn");
+      const content = document.getElementById("main");
+      content.style.display = "";
+      btn.setAttribute("text", (btn.innerHTML = "❚❚"));
+    }
     // Fun Letters
     this.funLetters(document.querySelector("body"));
 
